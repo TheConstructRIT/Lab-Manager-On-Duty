@@ -90,8 +90,8 @@ class App extends Component {
     };
 
     updateManagers() {
-        var api_key = process.env.google_calendar_api_key;
-        var cal_id = process.env.google_calendar_id;
+        const api_key = process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY;
+        const cal_id = process.env.REACT_APP_GOOGLE_CALENDAR_ID;
         var minMaxTime = generateDateTime();
         var url = 'https://www.googleapis.com/calendar/v3/calendars/'+cal_id+'/events?key='+api_key+'&timeMin='+minMaxTime[0]+'&timeMax='+minMaxTime[1]+'&Fields=Desicription'
         console.log(url);
@@ -117,6 +117,9 @@ class App extends Component {
             .catch(() => {
                 setTimeout(() => { this.updateManagers(); },2000);
             })
+
+            console.log(api_key)
+            console.log(cal_id)
     }
 
     componentDidMount() {

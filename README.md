@@ -1,3 +1,11 @@
+# Lab Manager on Duty
+
+## Setting Enviroment Variables
+* Create a .env file in the root folder
+* Add the following two lines the .env file
+* * REACT_APP_GOOGLE_CALENDAR_API_KEY=enter_api_key
+* * REACT_APP_GOOGLE_CALENDAR_ID=_enter_calendar_id
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
