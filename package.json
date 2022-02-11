@@ -4,12 +4,12 @@
   "private": true,
   "dependencies": {
     "i": "^0.3.6",
-    "npm": "^6.12.1",
+    "npm": "^7.20.6",
     "particlesjs": "^2.2.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-particles-js": "^2.7.0",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^5.0.0",
     "shards-react": "^1.0.3"
   },
   "scripts": {
